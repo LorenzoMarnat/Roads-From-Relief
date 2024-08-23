@@ -153,7 +153,7 @@ function readFile(file) {
   reader.readAsText(file);
 }
 
-app.start('../assets/config/config.json').then(() => {
+app.start('./assets/config/config.json').then(() => {
   ////// 3DTILES DEBUG
   const debug3dTilesWindow = new udviz.Widgets.Debug3DTilesWindow(
     app.view3D.getLayerManager()
